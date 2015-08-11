@@ -50,6 +50,20 @@ var Example = React.createFactory(React.createClass({displayName: 'Example',
           option({value: 'black'}, 'Black'),
           option({value: 'orange'}, 'Orange'),
           option({value: 'greenish'}, 'Light greenish with a little bit of yellow')
+        ),
+        h1(null, "Badge Example"),
+        SelectBox(
+          {
+            label: "Favorite Colors",
+            onChange: this.handleMultiChange,
+            value: this.state.colors,
+            multiple: true
+          },
+          option({value: 'red', tag: 3}, 'Red'),
+          option({value: 'green', tag: 99}, 'Green'),
+          option({value: 'blue', tag: 56}, 'Blue'),
+          option({value: 'black', tag: 1}, 'Black'),
+          option({value: 'orange', tag: 332}, 'Orange')
         )
       )
     )

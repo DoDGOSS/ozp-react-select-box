@@ -31,6 +31,7 @@ module.exports = function(config) {
       require("karma-mocha"),
       require("karma-chai"),
       require("karma-firefox-launcher"),
+      require("karma-phantomjs-launcher"),
       require("karma-webpack")
     ]
   });
